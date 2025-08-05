@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+{% block content %}
+<h1>Certificates</h1>
+
+<div style="display: flex; flex-wrap: wrap; gap: 20px;">
+    <abbr title="HTML Certificate from IIT Delhi">
+        <img src="{{ url_for('static', filename='images/html-certi.png') }}" alt="HTML Certificate" width="300px" style="cursor: pointer;">
+    </abbr>
+
+    <abbr title="Database Management System Certificate from Infosys SpringBoard">
+        <img src="{{ url_for('static', filename='images/DBMS certi.png') }}" alt="Database Management Certificate" width="300px" style="cursor: pointer;">
+    </abbr>
+
+    <abbr title="Python Basics Certificate from Infosys SpringBoard">
+        <img src="{{ url_for('static', filename='images/python-certi1.png') }}" alt="Python Basic Certificate" width="300px" style="cursor: pointer;">
+    </abbr>
+
+    <abbr title="Python Fundamentals Certificate from Infosys SpringBoard">
+        <img src="{{ url_for('static', filename='images/Python-certi2.png') }}" alt="Python Fundamentals Certificate" width="300px" style="cursor: pointer;">
+    </abbr>
+</div>
+
+{% endblock %}
+

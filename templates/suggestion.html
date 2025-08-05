@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+{% block content %}
+<h1 style="text-align: center;">Submit a Suggestion</h1>
+
+<div style="display: flex; justify-content: center;">
+    <form method="POST" style="width: 60%; max-width: 600px;">
+        <label for="name">Name:</label><br>
+        <input type="text" id="name" name="name" required style="width: 100%; padding: 10px; font-size: 16px;"><br><br>
+
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" required style="width: 100%; padding: 10px; font-size: 16px;"><br><br>
+
+        <label for="suggestion">Suggestion:</label><br>
+        <textarea id="suggestion" name="suggestion" rows="6" required style="width: 100%; padding: 10px; font-size: 16px;"></textarea><br><br>
+
+        <div style="text-align: center;">
+            <button type="submit" style="padding: 10px 20px; font-size: 16px;">Submit</button>
+        </div>
+    </form>
+</div>
+{% endblock %}

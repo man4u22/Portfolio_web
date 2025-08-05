@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+{% block content %}
+    <h1>Education & Skills</h1>
+    
+    <ul>
+        <li>Bachelor's in AI & ML - KSIT College | Passing Year: 2026 | CGPA: 7.86 </li>
+        <br>
+        <li>Skills: HTML, CSS, Python(Intermediate), Flask, SQL, Java(Intermediate), TensorFlow, Deep Learning,
+                <br>Microsoft office Tools : Power BI, Excel, Word, VS code, Github, google co-colab.
+        </li>
+    </ul>
+
+    <!-- Resume Download Section -->
+    <div style="margin-top: 20px;">
+        <a href="{{ url_for('download_resume') }}" 
+           style="text-decoration: none; color: black; font-size: 18px;">
+            <img src="{{ url_for('static', filename='images/icon.png') }}" 
+                 alt="Download Resume" 
+                 style="width: 30px; vertical-align: middle; margin-right: 10px;">
+            Download My Resume
+        </a>
+    </div>
+{% endblock %}
